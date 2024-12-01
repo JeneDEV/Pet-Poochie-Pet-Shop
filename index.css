@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding:0;
+   }
+
+   body {
+       padding: 0;
+   }
+/*----- Fonts -----*/
+   @font-face{
+       src: url("Fonts/ConcertOne-Regular.ttf");
+       font-family: Con;
+   }
+   @font-face{
+       src: url("Fonts/Roboto-Light.ttf");
+       font-family: ROB;
+   }
+/*----- BackgroundImage -----*/
+   body {
+       background-image: url(Images/dogbg1.png);
+       background-repeat: no-repeat;
+       background-size: cover;
+       background-position: center;
+       background-attachment: fixed;
+   }
+/*----- Sidebar-----*/
+   .main-menu {
+       background-color:  #300200;
+       box-shadow: 0px 0px 0px #d4d4d4;
+       width: 59px;
+       height: 100%;
+       position: fixed;
+       top: 0px;
+       left: 0px;
+       overflow-x: hidden;
+       white-space: nowrap;
+       transition: .3s ease;
+   }
+   
+   .main-menu:hover {
+       background-attachment: scroll;
+       width: 162px;
+   }
+   
+   .main-menu .menu-item {
+       padding:2px;
+       position: relative;
+       right: 0px;
+       top:20px;
+   }
+   
+   .main-menu .menu-item:hover {
+       background-color: #9fa39a56;
+       cursor: pointer;
+       width: 100%;
+       position: relative;
+   }
+   .main-menu .menu-item .bx {
+       color: rgb(241, 241, 241);
+       width: 10px;
+       font-size: 25px;
+       padding: 10px;
+   }
+   .main-menu .menu-item:hover .bx {
+       color: #ffffff;
+   }
+   
+   .main-menu section li span {
+       color: rgb(241, 241, 241);
+       position: relative;
+       left: 60px;
+       bottom:12.5px;
+       line-height: 0px;
+       font-family: Verdana, Geneva, Tahoma, sans-serif;
+       font-size: 14px;
+   }
+   section.home {
+       background-color:  #300200;
+       margin: 0px;
+   }
+   
+   .main-menu ul section .menu-item-logo img {
+       width: 50px;
+       position: relative;
+       left: 5px;
+       top: 99px;
+   }
+   .main-menu ul section .menu-item-name img {
+       width: 120px;
+       position: relative;
+       bottom: 0px;
+       left: 55px;
+
+   }
+   .main-menu ul li a{
+       color: rgb(255, 255, 255);
+       display: flex;
+       align-items: center;
+       text-decoration: none;
+       transition: all 0,4s ease;
+   }
+   .main-menu .home .menu-item-logo a{
+       text-decoration: none;
+   }
+/*----- User -----*/
+.main-menu .USERNAME{
+    position: absolute;
+    bottom: 94%;
+    left: 15px;
+    text-decoration: none; 
+}
+
+.main-menu .USER li span{
+    color: #996515;
+    position: absolute;
+    bottom: 95%;
+    left: 90px;
+    text-decoration: none;
+    text-align: center;
+}
+   .profile-card .pic{
+       display: block;
+       width: 45px;
+       height: 45px;
+       border-radius: 50%;
+       display: inline-block;
+       position: fixed;
+       top: 4px;
+       left: 2px;
+       padding: 4px;
+       background: linear-gradient(130deg, #53370c, #dfca63);
+       background-size: 40000% 40000%;
+       animation: animated-gradient 2s linear infinite
+   }
+   
+   @keyframes animated-gradient{
+       25%{
+           background-position: left bottom;
+       }
+       50%{
+           background-position: right bottom;
+       }
+       75%{
+           background-position: right top;
+       }
+       100%{
+           background-position: left top;
+       }
+   }
+   .pic img{
+       display: block;
+       width: 45px;
+       height: 45px;
+       border-radius: 50%;
+   }
+   .card-header:nth-child(1) span{
+       color: rgb(247, 247, 247);
+       font-size: 20px;
+       font-weight: 600;
+       margin: 10px 0;
+       position: relative;
+       right: 80px;
+       bottom: 60px;
+       font-family: MIT;
+   }
+   .card-header .PRO span{
+       font-size: 15px;
+       color: #f8f8f8;
+       position: relative;
+       right: 60px;
+       bottom: 60px;
+       font-family: Con;
+       text-decoration: none;
+   }
+/*----- CompanyTag -----*/
+   .COMPANYTAG p{
+       font-family: ROB;
+       font-size: 55px;
+       position: fixed;
+       left: 170px;
+       top: 18%;
+       color: #996515;
+   }
+   .COMPANYTAG p2{
+       font-family: ROB;
+       font-size: 75px;
+       position: fixed;
+       left: 170px;
+       top: 10%;
+       color: #996515;
+   }
+/*----- ShopNowButton -----*/
+   .btn-1{
+       position: fixed;
+       top: 670px;
+       left: 165px;
+       width: 200px;
+       height: 70px;
+       border: none;
+       color: white;
+       background-color: #996515;
+       border-radius: 4px;
+       box-shadow: inset 0 0 0 0 #fff098;
+       transition: ease-out 0.3s;
+       font-size:28px;
+       outline:none;
+   }
+   .btn-1:hover{
+       box-shadow: inset 300px 0 0 0 #996515;
+       cursor: pointer;
+       color: rgb(252, 245, 158);
+   }
